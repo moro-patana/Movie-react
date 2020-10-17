@@ -1,5 +1,5 @@
 import React from "react"
-import Movie from "./components/Movie.js"
+import Movie from "./components/MovieComponent.js"
 function App() {
     return (
         <Movie />

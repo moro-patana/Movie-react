@@ -19,6 +19,7 @@ function Movie() {
 
     return (
         <div className="movie_list">
+            {(movies.length === 0 ? <h3>Loading...</h3> : '')}
             {sortedMovies.map(movie =>
                 <article key={movie.id} className="container">
                     <div className="header">

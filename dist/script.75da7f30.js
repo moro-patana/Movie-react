@@ -28315,7 +28315,7 @@ function Movie() {
   const sortedMovies = movies.sort((a, b) => b.rt_score - a.rt_score);
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "movie_list"
-  }, sortedMovies.map(movie => /*#__PURE__*/_react.default.createElement("article", {
+  }, movies.length === 0 ? /*#__PURE__*/_react.default.createElement("h3", null, "Loading...") : '', sortedMovies.map(movie => /*#__PURE__*/_react.default.createElement("article", {
     key: movie.id,
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -28395,7 +28395,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58955" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55370" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

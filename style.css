@@ -80,3 +80,9 @@ u {
     font-weight: 500;
     font-size: 25px;
 }
+@media (min-width: 1114px) {
+    .movie_list {
+        max-width: 1114px;
+        margin: 0 auto;
+    }
+}
